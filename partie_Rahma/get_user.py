@@ -8,10 +8,5 @@ def get_user(users):
         print("Nouvel utilisateur. Création du profil...")
         users[user_id] = {"history": []}
     else:
-        print(f"Bienvenue de retour, {user_id}! Voici votre historique :")
-        if users[user_id]["history"]:
-            for entry in users[user_id]["history"]:
-                print(f"Date: {entry['date']}, Score: {entry['score']}")
-        else:
-            print("Aucun historique trouvé.")
+        print(f"Bienvenue de retour, {user_id}!")
     return user_id

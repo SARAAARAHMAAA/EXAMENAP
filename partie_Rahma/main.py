@@ -23,13 +23,13 @@ def main():
             print("Démarrage du QCM...")
             demarrer_qcm.demarrer_qcm(user_id)
         elif choice == "2":
-            # Afficher l'historique des QCM
-            if users[user_id]["history"]:
-                print("Historique des QCM :")
-                for entry in users[user_id]["history"]:
-                    print(f"Date: {entry['date']}, Score: {entry['score']}")
-            else:
-                print("Aucun historique disponible.")
+    # Afficher l'historique des QCM
+             if users["users"][user_id]["history"]:
+               for entry in users["users"][user_id]["history"]:
+                 print(f"Date: {entry['date']}, Score: {entry['score']}")
+             else:
+               print("Aucun historique trouvé.")
+
         elif choice == "3":
             # Quitter le programme
             print("Au revoir!")

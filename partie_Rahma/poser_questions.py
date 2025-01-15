@@ -9,8 +9,23 @@ def poser_questions(questions):
             print(f"\nQuestion {index + 1}: {question['question']}")
             for i, option in enumerate(question['options']):
                 print(f"{i + 1}. {option}")
-            # Demander à l'utilisateur de répondre
-            reponse = input("Votre réponse (1-4) : ")
-            if question['options'][int(reponse) - 1] == question['bonne_reponse']:
-                score += 1
+            
+           
+            while True:
+                try:
+                    reponse = input("Votre réponse (1-4) : ").strip()
+                    index_reponse = int(reponse) - 1
+         
+                    if 0 <= index_reponse < len(question['options']):
+                        if question['options'][index_reponse] == question['bonne_reponse']:
+                            print("Bonne réponse !")
+                            score += 1
+                        else:
+                            print("Mauvaise réponse.")
+                        break
+                    else:
+                        print("Veuillez entrer un nombre entre 1 et 4.")
+                except ValueError:
+                    print("Entrée invalide. Veuillez entrer un numéro valide.")
+    
     return score, None
