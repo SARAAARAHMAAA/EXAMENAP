@@ -15,56 +15,5 @@
             "options": ["for", "do while", "repeat", "until"],
             "bonne_reponse": "for"
         }
-    ],
-    "Réseaux": [
-        {
-            "question": "Quel protocole est utilisé pour envoyer des emails ?",
-            "options": ["HTTP", "SMTP", "FTP", "SNMP"],
-            "bonne_reponse": "SMTP"
-        },
-        {
-            "question": "Que signifie HTTP ?",
-            "options": ["HyperText Transfer Protocol", "HighText Transfer Protocol", "HyperTransfer Text Protocol", "HyperText Transition Protocol"],
-            "bonne_reponse": "HyperText Transfer Protocol"
-        },
-        {
-            "question": "Quel port est utilisé par HTTPS ?",
-            "options": ["80", "21", "443", "22"],
-            "bonne_reponse": "443"
-        }
-    ],
-    "Algorithmes": [
-        {
-            "question": "Quel algorithme est utilisé pour trier des éléments par comparaison ?",
-            "options": ["Quicksort", "Dijkstra", "Kruskal", "Prim"],
-            "bonne_reponse": "Quicksort"
-        },
-        {
-            "question": "Quelle est la complexité temporelle du tri par sélection dans le pire cas ?",
-            "options": ["O(n)", "O(n^2)", "O(log n)", "O(n log n)"],
-            "bonne_reponse": "O(n^2)"
-        },
-        {
-            "question": "Quel est le but principal d’un algorithme de recherche dichotomique ?",
-            "options": ["Trouver la somme d'un tableau", "Trier un tableau", "Chercher un élément dans un tableau trié", "Créer un tableau trié"],
-            "bonne_reponse": "Chercher un élément dans un tableau trié"
-        }
-    ],
-    "Culture générale": [
-        {
-            "question": "Quelle est la capitale de l'Allemagne ?",
-            "options": ["Berlin", "Munich", "Hambourg", "Francfort"],
-            "bonne_reponse": "Berlin"
-        },
-        {
-            "question": "Qui a écrit 'Les Misérables' ?",
-            "options": ["Victor Hugo", "Charles Dickens", "Émile Zola", "Albert Camus"],
-            "bonne_reponse": "Victor Hugo"
-        },
-        {
-            "question": "Quel est le plus grand pays du monde par superficie ?",
-            "options": ["Canada", "Russie", "Chine", "États-Unis"],
-            "bonne_reponse": "Russie"
-        }
     ]
 }

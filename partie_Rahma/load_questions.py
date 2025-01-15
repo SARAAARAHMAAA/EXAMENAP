@@ -2,7 +2,7 @@ import json
 
 def load_questions():
     """Charge les questions depuis le fichier questions.json."""
-    file_path = r"C:\Users\jsyas\EXAMENAP\partie_Rahma\questions.json"  # Remplacez par le chemin absolu
+    file_path = r"C:\Users\Condor\Downloads\examen tp ap\version 3\questions.json"  # Remplacez par le chemin absolu
     try:
         with open(file_path, 'r', encoding='utf-8') as file:
             data = json.load(file)

@@ -29,3 +29,6 @@ def poser_questions(questions):
                     print("Entrée invalide. Veuillez entrer un numéro valide.")
     
     return score, None
+
+
+
