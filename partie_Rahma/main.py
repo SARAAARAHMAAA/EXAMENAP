@@ -21,8 +21,10 @@ def main():
         if choice == "1":
             print("Démarrage du QCM...")
             demarrer_qcm.demarrer_qcm(user_id)
+            users = load_users.load_users()
         
         elif choice == "2":
+            users = load_users.load_users()
             user = next((user for user in data if user['user_id'] == user_id), None)
             if user and user["history"]:
                 print(f"Historique de {user['username']}:")
@@ -37,9 +39,10 @@ def main():
 
         elif choice == "4":
             init_historique.init_historique(user["user_id"], user["username"])
-
+            users = load_users.load_users()
         elif choice == "5":
             print("Au revoir!")
+            save_users.save_users(data)
             break
         
         else:
