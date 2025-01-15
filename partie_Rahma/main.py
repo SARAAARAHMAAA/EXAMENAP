@@ -1,9 +1,10 @@
 import json
-import load_users  # Module contenant la fonction load_users
+import load_users  
 import get_user
 import main_menu
 import save_users
 import demarrer_qcm
+import mettre_a_jour_historique
 
 
 
