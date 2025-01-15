@@ -42,14 +42,14 @@ def main():
             users = load_users.load_users()
         elif choice == "5":
             print("Au revoir!")
-            save_users.save_users(data)
+            save_users.save_users(users)
             break
         
         else:
             print("Option invalide, veuillez réessayer.")
 
     # Sauvegarder les utilisateurs mis à jour
-    save_users.save_users(data)
+    save_users.save_users(users)
 
 if __name__ == "__main__":
     decoration.show_intro()
