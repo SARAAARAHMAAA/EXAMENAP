@@ -11,7 +11,7 @@ def mettre_a_jour_historique(user_id,username, score):
 
             if user:
                 user['history'].append({
-                    'score': score,
+                    'score': score ,
                     'date': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
                 })
             else:

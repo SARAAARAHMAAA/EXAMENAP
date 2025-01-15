@@ -6,13 +6,14 @@ import save_users
 import demarrer_qcm
 import init_historique
 import mettre_a_jour_historique
+import decoration
 
 def main():
-    users = load_users.load_users()
-    user_id = get_user.get_user(users)
+    data = load_users.load_users()
+    user_id = get_user.get_user(data)
     print(f"Utilisateur sélectionné : {user_id}")
     
-    user = next((user for user in users if user['user_id'] == user_id), None)
+    user = next((user for user in data if user['user_id'] == user_id), None)
 
     while True:
         choice = main_menu.main_menu()
@@ -22,7 +23,7 @@ def main():
             demarrer_qcm.demarrer_qcm(user_id)
         
         elif choice == "2":
-            user = next((user for user in users if user['user_id'] == user_id), None)
+            user = next((user for user in data if user['user_id'] == user_id), None)
             if user and user["history"]:
                 print(f"Historique de {user['username']}:")
                 for entry in user["history"]:
@@ -31,8 +32,8 @@ def main():
                 print("Aucun historique trouvé.")
         
         elif choice == "3":
-            user_id = get_user.get_user(users)  # Permet de changer d'utilisateur
-            print(f"Utilisateur sélectionné : {user_id}")
+            user_id = get_user.get_user(data)  # Permet de changer d'utilisateur
+            print(f"\n\nUtilisateur sélectionné : {user_id}\n\n\n")
 
         elif choice == "4":
             init_historique.init_historique(user["user_id"], user["username"])
@@ -45,7 +46,8 @@ def main():
             print("Option invalide, veuillez réessayer.")
 
     # Sauvegarder les utilisateurs mis à jour
-    save_users.save_users(users)
+    save_users.save_users(data)
 
 if __name__ == "__main__":
+    decoration.show_intro()
     main()

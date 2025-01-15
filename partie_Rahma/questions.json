@@ -14,6 +14,129 @@
             "question": "Quel type de boucle existe en Python ?",
             "options": ["for", "do while", "repeat", "until"],
             "bonne_reponse": "for"
+        },
+        {
+            "question": "Quel module est utilisé pour manipuler les fichiers JSON en Python ?",
+            "options": ["csv", "json", "os", "pickle"],
+            "bonne_reponse": "json"
+        },
+        {
+            "question": "Quelle méthode est utilisée pour ajouter un élément à une liste en Python ?",
+            "options": ["push()", "append()", "insert()", "add()"],
+            "bonne_reponse": "append()"
+        },
+        {
+            "question": "Quelle structure de données utilise des clés et des valeurs en Python ?",
+            "options": ["List", "Tuple", "Dictionary", "Set"],
+            "bonne_reponse": "Dictionary"
+        }
+    ],
+    "Réseaux": [
+        {
+            "question": "Quel protocole est utilisé pour envoyer des courriers électroniques ?",
+            "options": ["HTTP", "FTP", "SMTP", "SNMP"],
+            "bonne_reponse": "SMTP"
+        },
+        {
+            "question": "Quelle est la fonction principale du protocole DNS ?",
+            "options": ["Acheminer les paquets", "Traduire les noms de domaine en adresses IP", "Partager des fichiers", "Envoyer des emails"],
+            "bonne_reponse": "Traduire les noms de domaine en adresses IP"
+        },
+        {
+            "question": "Quelle est la taille d'une adresse IPv4 en bits ?",
+            "options": ["64 bits", "128 bits", "32 bits", "16 bits"],
+            "bonne_reponse": "32 bits"
+        },
+        {
+            "question": "Quel port est utilisé par défaut pour le protocole HTTP ?",
+            "options": ["20", "22", "80", "443"],
+            "bonne_reponse": "80"
+        },
+        {
+            "question": "Que signifie l'acronyme LAN ?",
+            "options": ["Local Access Network", "Local Area Network", "Large Area Network", "Linked Area Network"],
+            "bonne_reponse": "Local Area Network"
+        }
+    ],
+    "Algorithmes": [
+        {
+            "question": "Quel est le temps de complexité moyen pour une recherche binaire ?",
+            "options": ["O(n)", "O(log n)", "O(1)", "O(n^2)"],
+            "bonne_reponse": "O(log n)"
+        },
+        {
+            "question": "Quelle est la complexité du tri par sélection ?",
+            "options": ["O(n)", "O(log n)", "O(n^2)", "O(n log n)"],
+            "bonne_reponse": "O(n^2)"
+        },
+        {
+            "question": "Quel algorithme est utilisé pour trouver le plus court chemin dans un graphe ?",
+            "options": ["Kruskal", "Dijkstra", "Prim", "Merge Sort"],
+            "bonne_reponse": "Dijkstra"
+        },
+        {
+            "question": "Dans une recherche linéaire, combien d'éléments sont parcourus au pire cas ?",
+            "options": ["1", "n", "log n", "n^2"],
+            "bonne_reponse": "n"
+        },
+        {
+            "question": "Quelle structure de données est utilisée pour une pile ?",
+            "options": ["FIFO", "LIFO", "RANDOM", "SORTED"],
+            "bonne_reponse": "LIFO"
+        }
+    ],
+    "Systèmes d'exploitation": [
+        {
+            "question": "Quel est le rôle principal d'un système d'exploitation ?",
+            "options": ["Compiler le code", "Fournir une interface entre le matériel et les logiciels", "Gérer les bases de données", "Configurer les routeurs"],
+            "bonne_reponse": "Fournir une interface entre le matériel et les logiciels"
+        },
+        {
+            "question": "Quel est un exemple de système d'exploitation en temps réel ?",
+            "options": ["Windows", "Linux", "RTOS", "MacOS"],
+            "bonne_reponse": "RTOS"
+        },
+        {
+            "question": "Quelle est la commande pour lister les fichiers dans un répertoire sous Linux ?",
+            "options": ["cd", "ls", "pwd", "mkdir"],
+            "bonne_reponse": "ls"
+        },
+        {
+            "question": "Quel est le processus parent de tous les processus sous Unix/Linux ?",
+            "options": ["systemd", "init", "bash", "cron"],
+            "bonne_reponse": "init"
+        },
+        {
+            "question": "Quel est l'espace réservé par le système d'exploitation pour stocker les processus actifs ?",
+            "options": ["RAM", "Cache", "Swap", "Heap"],
+            "bonne_reponse": "RAM"
+        }
+    ],
+    "Mathématiques": [
+        {
+            "question": "Quel est le résultat de 5! (factorielle de 5) ?",
+            "options": ["20", "120", "25", "60"],
+            "bonne_reponse": "120"
+        },
+        {
+            "question": "Quel est le théorème utilisé pour calculer l'hypoténuse d'un triangle ?",
+            "options": ["Théorème de Pythagore", "Théorème de Thalès", "Théorème de Fermat", "Théorème d'Euclide"],
+            "bonne_reponse": "Théorème de Pythagore"
+        },
+        {
+            "question": "Quelle est la formule pour l'aire d'un cercle ?",
+            "options": ["2πr", "πr²", "πd²", "2πr²"],
+            "bonne_reponse": "πr²"
+        },
+        {
+            "question": "Quelle est la solution de l'équation 2x + 3 = 7 ?",
+            "options": ["x = 2", "x = 1", "x = 4", "x = 3"],
+            "bonne_reponse": "x = 2"
+        },
+        {
+            "question": "Quel est le logarithme naturel de e ?",
+            "options": ["1", "0", "e", "10"],
+            "bonne_reponse": "1"
         }
     ]
 }

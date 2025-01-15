@@ -3,9 +3,10 @@ import poser_questions
 import mettre_a_jour_historique
 import json
 
-
+scoreTotal = 0
 
 def demarrer_qcm(user_id):
+    global scoreTotal
     """Démarre le QCM pour un utilisateur donné."""
     with open('users.json', 'r', encoding='utf-8') as file:
         users = json.load(file)
@@ -21,13 +22,13 @@ def demarrer_qcm(user_id):
         return
 
     # Poser les questions
-    score, _ = poser_questions.poser_questions(questions)
+    score, total_questions = poser_questions.poser_questions(questions)
 
-    # Afficher le score final
-    print(f"\n{user_id}, votre score final est : {score}/12")
-
+    poser_questions.show_final_message(score,total_questions)
 
     try:
+        scoreTotal += score
+        print(f"------- {scoreTotal}")
         mettre_a_jour_historique.mettre_a_jour_historique(user_id,user['username'], score)
         print(f"L'historique pour {user['username']} a été mis à jour avec succès.")
     except Exception as e:
