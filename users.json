@@ -2,12 +2,7 @@
     {
         "user_id": 1,
         "username": "yasmine",
-        "history": [
-            {
-                "score": 3,
-                "date": "2025-01-15 12:48:31"
-            }
-        ]
+        "history": []
     },
     {
         "user_id": 2,

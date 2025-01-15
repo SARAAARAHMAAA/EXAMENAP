@@ -4,6 +4,7 @@ import get_user
 import main_menu
 import save_users
 import demarrer_qcm
+import init_historique
 import mettre_a_jour_historique
 
 def main():
@@ -11,6 +12,8 @@ def main():
     user_id = get_user.get_user(users)
     print(f"Utilisateur sélectionné : {user_id}")
     
+    user = next((user for user in users if user['user_id'] == user_id), None)
+
     while True:
         choice = main_menu.main_menu()
         
@@ -30,8 +33,11 @@ def main():
         elif choice == "3":
             user_id = get_user.get_user(users)  # Permet de changer d'utilisateur
             print(f"Utilisateur sélectionné : {user_id}")
-        
+
         elif choice == "4":
+            init_historique.init_historique(user["user_id"], user["username"])
+
+        elif choice == "5":
             print("Au revoir!")
             break
         
