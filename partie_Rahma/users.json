@@ -1,19 +1,12 @@
-{
-    "users": {
-        "yasmine": {
-            "history": [
-                {
-                    "score": 1,
-                    "date": "2025-01-15 11:13:32"
-                },
-                {
-                    "score": 4,
-                    "date": "2025-01-15 11:13:57"
-                }
-            ]
-        }
-    },
-    "yasmine": {
-        "history": []
+[
+    {
+        "user_id": 1,
+        "username": "yasmine",
+        "history": [
+            {
+                "score": 3,
+                "date": "2025-01-15 12:48:31"
+            }
+        ]
     }
-}
+]

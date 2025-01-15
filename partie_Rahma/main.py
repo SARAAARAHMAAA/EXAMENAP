@@ -8,24 +8,20 @@ import mettre_a_jour_historique
 
 
 
-# Fonction principale
-def main():
-    # Charger les utilisateurs depuis le fichier JSON
-    users = load_users.load_users()
 
-    # Identifier ou créer un profil utilisateur
+def main():
+    users = load_users.load_users()
     user_id = get_user.get_user(users)
     print(f"Utilisateur sélectionné : {user_id}")
     while True:
-        # Afficher le menu principal
         choice = main_menu.main_menu()
         if choice == "1":
             print("Démarrage du QCM...")
             demarrer_qcm.demarrer_qcm(user_id)
         elif choice == "2":
-    # Afficher l'historique des QCM
-             if users["users"][user_id]["history"]:
-               for entry in users["users"][user_id]["history"]:
+             user = next((user for user in users if user['user_id'] == user_id), None)
+             if user and user["history"]:
+               for entry in user["history"]:
                  print(f"Date: {entry['date']}, Score: {entry['score']}")
              else:
                print("Aucun historique trouvé.")

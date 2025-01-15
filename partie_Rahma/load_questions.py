@@ -6,7 +6,6 @@ def load_questions():
     try:
         with open(file_path, 'r', encoding='utf-8') as file:
             data = json.load(file)
-        print("Questions chargées avec succès:", data) 
         return data
     except FileNotFoundError:
         print("Erreur : Le fichier questions.json est introuvable.")

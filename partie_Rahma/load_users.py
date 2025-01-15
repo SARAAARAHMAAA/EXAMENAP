@@ -1,13 +1,8 @@
 import json
 
-# Chargement des utilisateurs depuis un fichier JSON
-def load_users(filename="users.json"):
+def load_users():
     try:
-        with open(filename, "r") as file:
+        with open('users.json', 'r', encoding='utf-8') as file:
             return json.load(file)
     except FileNotFoundError:
-        print("Aucun fichier d'utilisateurs trouvé, création d'un nouveau fichier.")
-        return {}
-    except json.JSONDecodeError:
-        print("Erreur de lecture du fichier JSON. Le fichier est peut-être corrompu.")
-        return {}
+        return []  
