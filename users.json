@@ -55,7 +55,7 @@
         "user_id": 4,
         "username": "TOTOTO",
         "history": []
-    }
+    },
     {
         "user_id": 5,
         "username": "Salsabila",
@@ -69,5 +69,5 @@
                 "date": "2025-01-15 23:15:08"
             }
         ]
-    },
+    }
 ]
