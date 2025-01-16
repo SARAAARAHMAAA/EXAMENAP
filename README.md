@@ -29,6 +29,8 @@ This is the repository for our exam in the Advanced Programming (AP) subject.
     - init_historique.py
     - demarrer_qcm.py
     - decoration.py
+    - questions.json
+    - users.json (il sera creer automatiquement si il n'existe pas)
 
 ### Exécution de l’application
 
