@@ -39,7 +39,21 @@
             {
                 "score": 4,
                 "date": "2025-01-15 20:37:11"
+            },
+            {
+                "score": 6,
+                "date": "2025-01-16 09:23:16"
             }
         ]
+    },
+    {
+        "user_id": 3,
+        "username": "rahma",
+        "history": []
+    },
+    {
+        "user_id": 4,
+        "username": "TOTOTO",
+        "history": []
     }
 ]
