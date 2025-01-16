@@ -138,5 +138,65 @@
             "options": ["1", "0", "e", "10"],
             "bonne_reponse": "1"
         }
+    ],
+    
+    "Sécurité Informatique": [
+        {
+            "question": "Que signifie l'acronyme HTTPS ?",
+            "options": ["HyperText Transfer Protocol Secure", "High Transfer Text Secure", "HyperText Transfer Protocol System", "HyperText Transfer Secure Port"],
+            "bonne_reponse": "HyperText Transfer Protocol Secure"
+        },
+        {
+            "question": "Quel est l'objectif principal d'un pare-feu ?",
+            "options": ["Chiffrer les données", "Empêcher les intrusions", "Analyser les paquets", "Améliorer les performances du réseau"],
+            "bonne_reponse": "Empêcher les intrusions"
+        },
+        {
+            "question": "Quelle technique est utilisée pour transformer des données en un format illisible sans clé ?",
+            "options": ["Hachage", "Chiffrement", "Compression", "Encapsulation"],
+            "bonne_reponse": "Chiffrement"
+        },
+        {
+            "question": "Qu'est-ce qu'un ransomware ?",
+            "options": ["Un logiciel malveillant qui exige une rançon", "Un logiciel antivirus", "Un outil de protection des données", "Un outil d'administration réseau"],
+            "bonne_reponse": "Un logiciel malveillant qui exige une rançon"
+        },
+        {
+            "question": "Quelle norme est utilisée pour le chiffrement des réseaux sans fil modernes ?",
+            "options": ["WEP", "WPA2", "VPN", "SSL"],
+            "bonne_reponse": "WPA2"
+        }
+    ],
+    "IA et Data Science": [
+        {
+            "question": "Quel est l'algorithme le plus couramment utilisé pour le clustering ?",
+            "options": ["K-Means", "Random Forest", "SVM", "Linear Regression"],
+            "bonne_reponse": "K-Means"
+        },
+        {
+            "question": "Quel langage est largement utilisé pour le traitement des données massives ?",
+            "options": ["Python", "C++", "JavaScript", "Swift"],
+            "bonne_reponse": "Python"
+        },
+        {
+            "question": "Que signifie l'acronyme NLP ?",
+            "options": ["Natural Language Processing", "Neural Learning Protocol", "Node Level Prediction", "Network Layer Processing"],
+            "bonne_reponse": "Natural Language Processing"
+        },
+        {
+            "question": "Qu'est-ce qu'un réseau de neurones artificiels (ANN) ?",
+            "options": [
+                "Un système inspiré du cerveau humain pour résoudre des problèmes",
+                "Un protocole réseau avancé",
+                "Un type de machine virtuelle",
+                "Un algorithme de tri"
+            ],
+            "bonne_reponse": "Un système inspiré du cerveau humain pour résoudre des problèmes"
+        },
+        {
+            "question": "Quelle est la bibliothèque Python couramment utilisée pour créer des visualisations de données ?",
+            "options": ["Matplotlib", "NumPy", "TensorFlow", "Scikit-learn"],
+            "bonne_reponse": "Matplotlib"
+        }
     ]
 }

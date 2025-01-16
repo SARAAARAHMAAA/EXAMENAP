@@ -49,34 +49,24 @@ def poser_questions(questions, chrono_limite=30):
         while not stop_event.is_set():
             try:
                 reponse = input().strip()
-                # Vérification si la réponse est un chiffre et dans l'intervalle 1-4
-                if reponse.isdigit():
-                    reponse = int(reponse)
-                    if reponse < 1 or reponse > 4:
-                        print(Fore.RED + "Erreur : Choisissez un numéro entre 1 et 4.")
-                        reponse = None  # Réinitialiser la réponse pour redemander
-                    else:
-                        stop_event.set()  # Arrêter le chrono dès que la réponse est saisie
-                        break
-                else:
-                    print(Fore.RED + "Erreur : Veuillez entrer un numéro valide.")
+                stop_event.set()  # Arrêter le chrono dès que la réponse est saisie
+                break
             except ValueError:
-                print(Fore.RED + "Erreur : Entrée invalide. Veuillez entrer un numéro.")
+                print(Fore.RED + "Entrée invalide. Veuillez entrer un numéro.")
         
         chrono_thread.join()  # Assurez-vous que le chrono s'arrête correctement
         if reponse:
-            index_reponse = reponse - 1
+            index_reponse = int(reponse) - 1
             if question['options'][index_reponse] == question['bonne_reponse']:
                 print(Fore.GREEN + "Bonne réponse ! 🎉")
                 score += 1
             else:
                 print(Fore.RED + f"Mauvaise réponse. La bonne réponse était : {question['bonne_reponse']}.")
-        
+
         # Affichage des statistiques en temps réel
         print(Fore.CYAN + f"Score actuel : {score}/{index + 1}")
 
     return score, total_questions
-
 
 
 def enregistrer_resultats(nom_utilisateur, score, total_questions):
