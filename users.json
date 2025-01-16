@@ -56,4 +56,18 @@
         "username": "TOTOTO",
         "history": []
     }
+    {
+        "user_id": 5,
+        "username": "Salsabila",
+        "history": [
+            {
+                "score": 5,
+                "date": "2025-01-15 23:06:11"
+            },
+            {
+                "score": 1,
+                "date": "2025-01-15 23:15:08"
+            }
+        ]
+    },
 ]
