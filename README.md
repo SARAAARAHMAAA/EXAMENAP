@@ -142,9 +142,9 @@ Au revoir!
 
 ### Contributeurs
 
-- **Sadaoui sara rahma** : Gestion des utilisateurs, interface utilisateur principale
-- **Aibeche yasmine** : Gestion des questions et réponses, évaluation et feedback
-- **Toutou salsabila** : Gestion avancée (chronométrage, exportation des résultats, catégories de questions)
+- **Sadaoui sara rahma** : Gestion des utilisateurs, interface utilisateur principale,changement d'utilisateur
+- **Aibeche yasmine** : Gestion des questions et réponses, évaluation et feedback, nettoyage de l'historique 
+- **Toutou salsabila** : Gestion avancée (chronométrage, exportation des résultats, catégories de questions), decoration du qcm
 
 ### Remarques
 
